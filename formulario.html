@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulário 01</title>
+    </head>
+
+    <body>
+        <h1>Pedido de pizza</h1>
+        <form method="get" action="teste.jsp">
+            Nome:
+            <input type="text" name="nome"/> <br>
+            Tamanho: 
+            <input type="radio" name="tamanho" value="g" checked/> Grande 
+            <input type="radio" name="tamanho" value="m"/> Médio
+            <input type="radio" name="tamanho" value="p"/> Pequeno
+            <br>
+            Sabor: 
+            <select name="sabor">
+                <option>--- selecione um sabor ---</option>
+                <option> Calabresa (lá ele)</option>
+                <option>Palmito</option>
+                <option>Cachorro-Quente</option>
+                <option>Portuguesa</option>
+                <option>Da casa</option>
+            </select>
+        </form>
+    </body>
+</html>
