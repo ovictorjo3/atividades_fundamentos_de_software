@@ -8,8 +8,11 @@
     <body>
         <h1>Pedido de pizza</h1>
         <form method="get" action="teste.jsp">
+            <!-- método get: coloca as infos na url-->
+            <!-- método post: não coloca as infos na url-->
             Nome:
             <input type="text" name="nome"/> <br>
+            E-mail: <input type="email" name="email"/> <br>
             Tamanho: 
             <input type="radio" name="tamanho" value="g" checked/> Grande 
             <input type="radio" name="tamanho" value="m"/> Médio
@@ -24,6 +27,24 @@
                 <option>Portuguesa</option>
                 <option>Da casa</option>
             </select>
+            <br>
+
+            Adicionais:
+
+            <input type="checkbox" name="borda" value="sim"/> Borda
+            <input type="checkbox" name="queijo" value="sim"/> Queijo Extra
+            <input type="checkbox" name="catupiry" value="sim"/> Catupiry
+
+            <br>
+            Data de entrega: 
+            <input type="date" name="data-entrega"/> 
+            <br>
+            Comentário: <br>
+            <textarea name="msg">
+
+            </textarea>
+            <br>
+            <input type="submit"/>
         </form>
     </body>
 </html>
